@@ -27,6 +27,36 @@
     }
 }
 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(173, 88, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(173, 88, 255, 0.15);
+    }
+}
+
+@keyframes gradientPulse {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 .teamBodyWrapper {
     position: relative;
     height: 85vh;
@@ -72,23 +102,42 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 0.8s ease-out forwards, float 6s ease-in-out infinite;
+}
+
+.team::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(173, 88, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(173, 88, 255, 0.1));
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: gradientPulse 8s ease infinite;
+    opacity: 0.7;
+    filter: blur(10px);
 }
 
 .team.visible {
     opacity: 1;
     transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
 }
 
 .team:hover {
     transform: translateY(-5px) scale(1.02);
     z-index: 10;
     filter: drop-shadow(0 5px 15px rgba(173, 88, 255, 0.15));
+    animation-play-state: paused;
 }
 
 .team:hover .teamImageIndividual {
     transform: scale(1.03);
     box-shadow: 0 5px 15px rgba(173, 88, 255, 0.2);
+    animation: none;
 }
 
 .teamImageIndividual {
@@ -100,6 +149,10 @@
     border-radius: 50%;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     border: 3px solid rgba(173, 88, 255, 0.1);
+    animation: pulse 4s ease-in-out infinite;
+    transform-origin: center;
+    background: #fff;
+    z-index: 2;
 }
 
 .teamNameDesignation {
