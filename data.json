@@ -3,7 +3,7 @@
 
     "college": "NSS College of Engineering",
 
-    "about": "NSS College of Engineering, Palakkad was established in 1960 with three branches during the second Five-Year plan with the assistance of Central and State Government under the Grand in-Aid scheme. Currently it is one of the most reputed, premier engineering educational institutions in Kerala, managed by Nair Service Society and affiliated to the APJ Abdul Kalam Technological University. At present, the institution offers B.TECH degree courses in six branches and M.TECH degree courses in Communication Engineering, Power Electronics, Computer Science & Engineering, Structural Engineering, Computer Integrated Manufacturing, and Biomedical Engineering.",
+    "about": "µLearn NSS College of Engineering Palakkad (NSSCE) was established on [Date] with the vision of cultivating a collaborative, tech-driven learning ecosystem powered by micro peer groups. The chapter encourages students to step beyond conventional approaches and engage in innovative, engineering-focused problem-solving. Under the leadership of Abhinav VR (Campus Lead) and Nisha, Assistant Professor – Civil (Faculty Enabler), µLearn NSSCE continues to foster a culture of exploration, creativity, and technical growth. In September 2025, the chapter formed its Executive Committee (Execom), uniting dedicated student leaders to advance its mission. Today, µLearn NSSCE stands as a vibrant technical community driven by collaboration, innovation, and continuous learning.",
     "events": [
         {
             "month": "Sep",
@@ -104,6 +104,21 @@
         "operationLead": {
             "name": "Favas M",
             "image": "https://dataset-eight.vercel.app/member6.svg"
+        },
+        "member9": {
+            "name": "John Doe",
+            "image": "https://dataset-eight.vercel.app/member7.svg",
+            "role": "Event Coordinator"
+        },
+        "member10": {
+            "name": "Jane Smith",
+            "image": "https://dataset-eight.vercel.app/member8.svg",
+            "role": "Outreach Lead"
+        },
+        "member11": {
+            "name": "Alex Johnson",
+            "image": "https://dataset-eight.vercel.app/member9.svg",
+            "role": "Tech Mentor"
         }
     },
 

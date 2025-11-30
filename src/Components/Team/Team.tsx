@@ -198,7 +198,10 @@ const Team = () => {
                             <img
                                 className={styles.teamImageIndividual}
                                 src={data.team.operationLead.image}
+                                alt={`${data.team.operationLead.name}, Operation Lead`}
                                 loading="lazy"
+                                width="200"
+                                height="200"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
@@ -206,7 +209,80 @@ const Team = () => {
                                 {data.team.operationLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Content Lead
+                                Operation Lead
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* New Team Members */}
+                    <div 
+                        ref={(el) => addToRefs(el, 8)}
+                        className={`${styles.team} ${styles.team9}`}
+                    >
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.member9.image}
+                                alt={`${data.team.member9.name}, ${data.team.member9.role}`}
+                                loading="lazy"
+                                width="200"
+                                height="200"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.member9.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                {data.team.member9.role}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div 
+                        ref={(el) => addToRefs(el, 9)}
+                        className={`${styles.team} ${styles.team10}`}
+                    >
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.member10.image}
+                                alt={`${data.team.member10.name}, ${data.team.member10.role}`}
+                                loading="lazy"
+                                width="200"
+                                height="200"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.member10.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                {data.team.member10.role}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div 
+                        ref={(el) => addToRefs(el, 10)}
+                        className={`${styles.team} ${styles.team11}`}
+                    >
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.member11.image}
+                                alt={`${data.team.member11.name}, ${data.team.member11.role}`}
+                                loading="lazy"
+                                width="200"
+                                height="200"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.member11.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                {data.team.member11.role}
                             </div>
                         </div>
                     </div>                       
