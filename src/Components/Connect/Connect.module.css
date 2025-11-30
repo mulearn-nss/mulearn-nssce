@@ -50,7 +50,7 @@
   justify-content: center;
   gap: 8px;
   width: fit-content;
-  padding: 8px 20px;
+  padding: 10px 24px;
   border-radius: 8px;
   border: 2px solid #ae59ff;
   font-size: 18px;
@@ -62,7 +62,9 @@
 }
 
 .Whatsapp {
-  color: #ae59ff;
+  background-color: #25D366;
+  color: white;
+  border-color: #25D366 !important;
 }
 
 .contentWrapper img {

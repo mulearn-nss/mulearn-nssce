@@ -10,7 +10,7 @@ const Footer = () => {
                 <ULearnWhite />
                 <p>
                     Reach us at{" "}
-                    <a href={`mailto:${data.email}`}>{data.email}</a>
+                    <a href={`mailto:${data.email}`} target="_blank" rel="noopener noreferrer">{data.email}</a>
                 </p>
                 <div>
                     <a target="_blank" href="https://mulearn.org/">
@@ -28,22 +28,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.socialMedia}>
-                <a href={data.linkedIn}>
+                <a href={data.linkedIn} target="_blank" rel="noopener noreferrer">
                     <LinkedIn />
                     LinkedIn
                 </a>
-                <a href={data.instagram}>
+                <a href={data.instagram} target="_blank" rel="noopener noreferrer">
                     <Instagram />
                     Instagram
                 </a>
-                <a href={data.twitter}>
+                {/* <a href={data.twitter} target="_blank" rel="noopener noreferrer">
                     <Twitter />
                     Twitter
                 </a>
-                <a href={data.facebook}>
+                <a href={data.facebook} target="_blank" rel="noopener noreferrer">
                     <Facebook />
                     Facebook
-                </a>
+                </a> */}
             </div>
             <div className={styles.line}></div>
             <div className={styles.ptag}>
